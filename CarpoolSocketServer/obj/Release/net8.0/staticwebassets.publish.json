@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "uUJHpVIK83G+0BcSWBaAcRMvBUHA2MOYDMamkBQfbGI=",
+  "Source": "CarpoolSocketServer",
+  "BasePath": "_content/CarpoolSocketServer",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

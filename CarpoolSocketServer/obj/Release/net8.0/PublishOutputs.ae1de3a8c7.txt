@@ -1,0 +1,12 @@
+C:\Users\moolm\source\repos\CarpoolSocketServer\CarpoolSocketServer\obj\Release\net8.0\PubTmp\Out\CarpoolSocketServer.exe
+C:\Users\moolm\source\repos\CarpoolSocketServer\CarpoolSocketServer\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\moolm\source\repos\CarpoolSocketServer\CarpoolSocketServer\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\moolm\source\repos\CarpoolSocketServer\CarpoolSocketServer\obj\Release\net8.0\PubTmp\Out\CarpoolSocketServer.dll
+C:\Users\moolm\source\repos\CarpoolSocketServer\CarpoolSocketServer\obj\Release\net8.0\PubTmp\Out\CarpoolSocketServer.deps.json
+C:\Users\moolm\source\repos\CarpoolSocketServer\CarpoolSocketServer\obj\Release\net8.0\PubTmp\Out\CarpoolSocketServer.runtimeconfig.json
+C:\Users\moolm\source\repos\CarpoolSocketServer\CarpoolSocketServer\obj\Release\net8.0\PubTmp\Out\CarpoolSocketServer.pdb
+C:\Users\moolm\source\repos\CarpoolSocketServer\CarpoolSocketServer\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\moolm\source\repos\CarpoolSocketServer\CarpoolSocketServer\obj\Release\net8.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\moolm\source\repos\CarpoolSocketServer\CarpoolSocketServer\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\moolm\source\repos\CarpoolSocketServer\CarpoolSocketServer\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\moolm\source\repos\CarpoolSocketServer\CarpoolSocketServer\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
