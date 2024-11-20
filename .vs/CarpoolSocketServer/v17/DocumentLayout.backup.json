@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\moolm\\source\\repos\\CarpoolSocketServer\\",
+  "WorkspaceRootPath": "C:\\Users\\moolm\\source\\Cloned_Repos\\MySocketServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|c:\\users\\moolm\\source\\repos\\carpoolsocketserver\\carpoolsocketserver\\websocketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|solutionrelative:carpoolsocketserver\\websocketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|c:\\users\\moolm\\source\\repos\\carpoolsocketserver\\carpoolsocketserver\\locationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|solutionrelative:carpoolsocketserver\\locationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|c:\\users\\moolm\\source\\repos\\carpoolsocketserver\\carpoolsocketserver\\carpoolsocketserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|solutionrelative:carpoolsocketserver\\carpoolsocketserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|c:\\users\\moolm\\source\\repos\\carpoolsocketserver\\carpoolsocketserver\\websocketcleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|c:\\users\\moolm\\source\\cloned_repos\\mysocketserver\\carpoolsocketserver\\websocketcleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|solutionrelative:carpoolsocketserver\\websocketcleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|c:\\users\\moolm\\source\\repos\\carpoolsocketserver\\carpoolsocketserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|c:\\users\\moolm\\source\\cloned_repos\\mysocketserver\\carpoolsocketserver\\websocketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|solutionrelative:carpoolsocketserver\\websocketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|c:\\users\\moolm\\source\\cloned_repos\\mysocketserver\\carpoolsocketserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|solutionrelative:carpoolsocketserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|c:\\users\\moolm\\source\\cloned_repos\\mysocketserver\\carpoolsocketserver\\carpoolsocketserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|solutionrelative:carpoolsocketserver\\carpoolsocketserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|c:\\users\\moolm\\source\\cloned_repos\\mysocketserver\\carpoolsocketserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|solutionrelative:carpoolsocketserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|c:\\users\\moolm\\source\\cloned_repos\\mysocketserver\\carpoolsocketserver\\locationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB87E80-E9BD-4A0D-AB22-4584DB8D688B}|CarpoolSocketServer\\CarpoolSocketServer.csproj|solutionrelative:carpoolsocketserver\\locationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,67 +46,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CarpoolSocketServer.http",
-              "DocumentMoniker": "C:\\Users\\moolm\\source\\repos\\CarpoolSocketServer\\CarpoolSocketServer\\CarpoolSocketServer.http",
-              "RelativeDocumentMoniker": "CarpoolSocketServer\\CarpoolSocketServer.http",
-              "ToolTip": "C:\\Users\\moolm\\source\\repos\\CarpoolSocketServer\\CarpoolSocketServer\\CarpoolSocketServer.http",
-              "RelativeToolTip": "CarpoolSocketServer\\CarpoolSocketServer.http",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\moolm\\source\\Cloned_Repos\\MySocketServer\\CarpoolSocketServer\\appsettings.json",
+              "RelativeDocumentMoniker": "CarpoolSocketServer\\appsettings.json",
+              "ToolTip": "C:\\Users\\moolm\\source\\Cloned_Repos\\MySocketServer\\CarpoolSocketServer\\appsettings.json",
+              "RelativeToolTip": "CarpoolSocketServer\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-20T13:14:10.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarpoolSocketServer.http",
+              "DocumentMoniker": "C:\\Users\\moolm\\source\\Cloned_Repos\\MySocketServer\\CarpoolSocketServer\\CarpoolSocketServer.http",
+              "RelativeDocumentMoniker": "CarpoolSocketServer\\CarpoolSocketServer.http",
+              "ToolTip": "C:\\Users\\moolm\\source\\Cloned_Repos\\MySocketServer\\CarpoolSocketServer\\CarpoolSocketServer.http",
+              "RelativeToolTip": "CarpoolSocketServer\\CarpoolSocketServer.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
               "WhenOpened": "2024-11-20T12:56:45.184Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "WebSocketCleanupService.cs",
-              "DocumentMoniker": "C:\\Users\\moolm\\source\\repos\\CarpoolSocketServer\\CarpoolSocketServer\\WebSocketCleanupService.cs",
+              "DocumentMoniker": "C:\\Users\\moolm\\source\\Cloned_Repos\\MySocketServer\\CarpoolSocketServer\\WebSocketCleanupService.cs",
               "RelativeDocumentMoniker": "CarpoolSocketServer\\WebSocketCleanupService.cs",
-              "ToolTip": "C:\\Users\\moolm\\source\\repos\\CarpoolSocketServer\\CarpoolSocketServer\\WebSocketCleanupService.cs",
+              "ToolTip": "C:\\Users\\moolm\\source\\Cloned_Repos\\MySocketServer\\CarpoolSocketServer\\WebSocketCleanupService.cs",
               "RelativeToolTip": "CarpoolSocketServer\\WebSocketCleanupService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvyMAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T11:39:53.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WebSocketManager.cs",
-              "DocumentMoniker": "C:\\Users\\moolm\\source\\repos\\CarpoolSocketServer\\CarpoolSocketServer\\WebSocketManager.cs",
+              "DocumentMoniker": "C:\\Users\\moolm\\source\\Cloned_Repos\\MySocketServer\\CarpoolSocketServer\\WebSocketManager.cs",
               "RelativeDocumentMoniker": "CarpoolSocketServer\\WebSocketManager.cs",
-              "ToolTip": "C:\\Users\\moolm\\source\\repos\\CarpoolSocketServer\\CarpoolSocketServer\\WebSocketManager.cs",
+              "ToolTip": "C:\\Users\\moolm\\source\\Cloned_Repos\\MySocketServer\\CarpoolSocketServer\\WebSocketManager.cs",
               "RelativeToolTip": "CarpoolSocketServer\\WebSocketManager.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAqwFkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAADwv4oAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T11:37:48.752Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\moolm\\source\\repos\\CarpoolSocketServer\\CarpoolSocketServer\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\moolm\\source\\Cloned_Repos\\MySocketServer\\CarpoolSocketServer\\Program.cs",
               "RelativeDocumentMoniker": "CarpoolSocketServer\\Program.cs",
-              "ToolTip": "C:\\Users\\moolm\\source\\repos\\CarpoolSocketServer\\CarpoolSocketServer\\Program.cs",
+              "ToolTip": "C:\\Users\\moolm\\source\\Cloned_Repos\\MySocketServer\\CarpoolSocketServer\\Program.cs",
               "RelativeToolTip": "CarpoolSocketServer\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAiwCoAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T11:35:13.642Z"
+              "WhenOpened": "2024-10-29T11:35:13.642Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "LocationData.cs",
-              "DocumentMoniker": "C:\\Users\\moolm\\source\\repos\\CarpoolSocketServer\\CarpoolSocketServer\\LocationData.cs",
+              "DocumentMoniker": "C:\\Users\\moolm\\source\\Cloned_Repos\\MySocketServer\\CarpoolSocketServer\\LocationData.cs",
               "RelativeDocumentMoniker": "CarpoolSocketServer\\LocationData.cs",
-              "ToolTip": "C:\\Users\\moolm\\source\\repos\\CarpoolSocketServer\\CarpoolSocketServer\\LocationData.cs",
+              "ToolTip": "C:\\Users\\moolm\\source\\Cloned_Repos\\MySocketServer\\CarpoolSocketServer\\LocationData.cs",
               "RelativeToolTip": "CarpoolSocketServer\\LocationData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T11:36:33.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T11:36:33.637Z"
             }
           ]
         }

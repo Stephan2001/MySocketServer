@@ -7,11 +7,16 @@ namespace CarpoolSocketServer
 {
     public class WebSocketManager
     {
-        // Store connected WebSocket clients
         private static ConcurrentDictionary<string, ConcurrentBag<WebSocket>> _groups = new ConcurrentDictionary<string, ConcurrentBag<WebSocket>>();
         private static ConcurrentDictionary<WebSocket, (string Name, double Latitude, double Longitude)> _clientLocations = new ConcurrentDictionary<WebSocket, (string, double, double)>();
+        private readonly ConcurrentDictionary<WebSocket, DateTime> _connectionTimestamps = new ConcurrentDictionary<WebSocket, DateTime>();
+        private readonly WebSocketCleanupService _cleanupService;
 
-        // Add client to a group
+        public WebSocketManager(TimeSpan cleanupInterval, TimeSpan connectionTimeout)
+        {
+            _cleanupService = new WebSocketCleanupService(_connectionTimestamps, cleanupInterval, connectionTimeout);
+        }
+
         public void AddClientToGroup(string groupId, WebSocket webSocket)
         {
             _groups.AddOrUpdate(groupId, new ConcurrentBag<WebSocket> { webSocket }, (key, existingBag) =>
@@ -19,9 +24,11 @@ namespace CarpoolSocketServer
                 existingBag.Add(webSocket);
                 return existingBag;
             });
+
+            // Track initial connection time
+            _connectionTimestamps[webSocket] = DateTime.UtcNow;
         }
 
-        // Handle incoming WebSocket messages
         public async Task HandleWebSocketAsync(WebSocket webSocket, string groupId, CancellationToken cancellationToken)
         {
             AddClientToGroup(groupId, webSocket);
@@ -42,6 +49,9 @@ namespace CarpoolSocketServer
                         // Update the client's location
                         _clientLocations[webSocket] = locationData.Value;
 
+                        // Update the connection timestamp
+                        _cleanupService.UpdateConnection(webSocket);
+
                         // Broadcast updated locations to all group members
                         await BroadcastGroupLocationsAsync(groupId, cancellationToken);
                     }
@@ -50,10 +60,6 @@ namespace CarpoolSocketServer
             catch (WebSocketException ex)
             {
                 Console.WriteLine($"WebSocket exception: {ex.Message}");
-                // Clean up on WebSocket exception
-                RemoveClientFromGroup(groupId, webSocket);
-                _clientLocations.TryRemove(webSocket, out _);
-                await webSocket.CloseAsync(WebSocketCloseStatus.NormalClosure, "Connection closed due to error", cancellationToken);
             }
             catch (OperationCanceledException)
             {
@@ -63,6 +69,7 @@ namespace CarpoolSocketServer
             {
                 RemoveClientFromGroup(groupId, webSocket);
                 _clientLocations.TryRemove(webSocket, out _);
+                _connectionTimestamps.TryRemove(webSocket, out _);
                 await CloseWebSocketAsync(webSocket);
             }
         }
@@ -72,15 +79,11 @@ namespace CarpoolSocketServer
             try
             {
                 var locationData = JsonConvert.DeserializeObject<LocationData>(message);
-                if (locationData != null)
+                if (locationData != null && !string.IsNullOrWhiteSpace(locationData.Name) &&
+                    locationData.Latitude >= -90 && locationData.Latitude <= 90 &&
+                    locationData.Longitude >= -180 && locationData.Longitude <= 180)
                 {
-                    // Validate latitude and longitude
-                    if (locationData.Latitude >= -90 && locationData.Latitude <= 90 &&
-                        locationData.Longitude >= -180 && locationData.Longitude <= 180 &&
-                        !string.IsNullOrWhiteSpace(locationData.Name))
-                    {
-                        return (locationData.Name, locationData.Latitude, locationData.Longitude);
-                    }
+                    return (locationData.Name, locationData.Latitude, locationData.Longitude);
                 }
             }
             catch (JsonException ex)
@@ -88,10 +91,9 @@ namespace CarpoolSocketServer
                 Console.WriteLine($"Error parsing location data: {ex.Message}");
             }
 
-            return null; // Return null if parsing fails or data is invalid
+            return null;
         }
 
-        // Broadcast updated locations to all members of a group
         public async Task BroadcastGroupLocationsAsync(string groupId, CancellationToken cancellationToken)
         {
             if (!_groups.TryGetValue(groupId, out var clients)) return;
@@ -126,7 +128,6 @@ namespace CarpoolSocketServer
             {
                 clients.TryTake(out webSocket); // Remove the client safely
 
-                // remove the group entirely if no clients are left
                 if (clients.IsEmpty)
                 {
                     _groups.TryRemove(groupId, out _);

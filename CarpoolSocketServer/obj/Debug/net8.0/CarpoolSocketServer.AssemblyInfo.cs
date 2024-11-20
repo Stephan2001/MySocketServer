@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CarpoolSocketServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+048581f50a0b7388ddf0b55ebdf747274f392fc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("CarpoolSocketServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CarpoolSocketServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

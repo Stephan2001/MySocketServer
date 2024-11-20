@@ -23,6 +23,7 @@ namespace CarpoolSocketServer
             {
                 while (true)
                 {
+                    Console.WriteLine($"[Cleanup Task] Running cleanup at {DateTime.UtcNow}");
                     await Task.Delay(_cleanupInterval);
                     await CleanupStaleConnections();
                 }
@@ -40,9 +41,11 @@ namespace CarpoolSocketServer
             {
                 if (_clientConnections.TryRemove(connection, out _))
                 {
+                    Console.WriteLine($"[Cleanup Task] Removing stale connection at {DateTime.UtcNow}");
                     try
                     {
                         await connection.CloseAsync(WebSocketCloseStatus.NormalClosure, "Connection closed due to inactivity", CancellationToken.None);
+                        Console.WriteLine($"[Cleanup Task] Successfully closed stale WebSocket connection.");
                     }
                     catch (Exception ex)
                     {
@@ -55,6 +58,7 @@ namespace CarpoolSocketServer
         public void UpdateConnection(WebSocket webSocket)
         {
             _clientConnections[webSocket] = DateTime.UtcNow;
+            Console.WriteLine($"[Cleanup Task] Updated connection timestamp for WebSocket.");
         }
     }
 }

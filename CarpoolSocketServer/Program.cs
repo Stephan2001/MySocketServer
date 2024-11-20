@@ -8,13 +8,17 @@ namespace CarpoolSocketServer
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            TimeSpan cleanupInterval = TimeSpan.FromMinutes(5);  // Cleanup every 5 minutes
+            TimeSpan connectionTimeout = TimeSpan.FromMinutes(9);  // Timeout for inactive connections
 
+            // Add services to the container.
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddSingleton<WebSocketManager>();
+
+            // Register WebSocketManager with intervals
+            builder.Services.AddSingleton<WebSocketManager>(sp =>
+                new WebSocketManager(cleanupInterval, connectionTimeout));
 
             var app = builder.Build();
 
@@ -24,13 +28,10 @@ namespace CarpoolSocketServer
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
             app.UseWebSockets(new WebSocketOptions { KeepAliveInterval = TimeSpan.FromMinutes(2) });
-
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
-
             app.MapControllers();
 
             // Custom middleware for WebSocket connections
